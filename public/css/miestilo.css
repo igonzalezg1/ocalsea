@@ -1,0 +1,89 @@
+.encabezaado
+{
+    background:  #005799 !important;
+}
+
+.botones
+{
+    background: white !important;
+    color: #005799 !important;
+    border: none !important;
+}
+
+.botones:hover
+{
+    color: white !important;
+    background-color: #ea1111 !important;
+}
+
+.espaciado
+{
+    margin-bottom: 10px;
+}
+
+.upload-box
+{
+    font-size: 16px;
+    background: white;
+    border-radius: 50px 0px 0px 50px;
+    box-shadow: 1px 1px 5px black;
+    width: 100%;
+    outline: none;
+}
+
+::-webkit-file-upload-button
+{
+    color: white;
+    background: #005799;
+    padding: 7px;
+    border: none;
+    border-radius: 50px 0px 0px 50px;
+    box-shadow: 1px 0 1px 1px #005799;
+    outline: none;
+}
+
+::-webkit-file-upload-button:hover
+{
+    background: #023e6b;
+}
+
+.encabezadotabla
+{
+    background-color: #005799;
+    color: white;
+}
+
+#contenedor_carga
+{
+    background-color: rgba(240, 240, 250, 50) !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    -webkit-transition: all 1s ease !important;
+    -o-transition: all 1s ease !important;
+    transition: all 1s ease !important;
+    z-index: 10000 !important;
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #2686f4;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
